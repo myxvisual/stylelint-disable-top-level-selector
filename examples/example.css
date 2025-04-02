@@ -1,0 +1,19 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.component-foo {
+  color: red;
+}
+
+:root {
+  --color-primary: #007bff;
+}
+
+.safe-foo {
+  color: var(--color-primary);
+}
