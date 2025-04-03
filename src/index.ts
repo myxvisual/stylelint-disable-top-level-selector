@@ -7,7 +7,7 @@ const {
 } = stylelint;
 
 // Define the rule name and error messages
-const ruleName = 'plugin/no-top-level-selector';
+const ruleName = 'plugin/disable-top-level-selector';
 const defaultMessages: stylelint.RuleMessages = ruleMessages(ruleName, {
   rejected: (selector: string) => `Unexpected top-level selector: ${selector}`,
 });
@@ -138,9 +138,8 @@ const ruleFunction = (enable: boolean, primary: RuleOptions = {}, context: style
 
 ruleFunction.ruleName = ruleName;
 ruleFunction.messages = defaultMessages;
-// TODO
 ruleFunction.meta = {
-  url: "https://github.com/foo-org/stylelint-selector-no-foo/blob/main/README.md"
+  url: "https://github.com/myxvisual/stylelint-disable-top-level-selector",
 };
 
 /**

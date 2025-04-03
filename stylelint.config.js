@@ -3,7 +3,7 @@ module.exports = {
     './dist/index.js' // Path to your compiled plugin
   ],
   rules: {
-    'plugin/no-top-level-selector': [true, {
+    'plugin/disable-top-level-selector': [true, {
       // These selectors will trigger errors when at top level
       restrictedSelectors: [
         'body',

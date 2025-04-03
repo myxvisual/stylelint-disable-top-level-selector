@@ -1,14 +1,14 @@
-# stylelint-no-top-level-selector ✂️
+# stylelint-disable-top-level-selector ✂️
 
 A Stylelint plugin that prevents the use of restricted selectors at the top level of your CSS.
 
-[![npm version](https://badge.fury.io/js/stylelint-no-top-level-selector.svg)](https://www.npmjs.com/package/stylelint-no-top-level-selector)
+[![npm version](https://badge.fury.io/js/stylelint-disable-top-level-selector.svg)](https://www.npmjs.com/package/stylelint-disable-top-level-selector)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🚀 Installation
 
 ```bash
-npm install stylelint-no-top-level-selector --save-dev
+npm install stylelint-disable-top-level-selector --save-dev
 ```
 
 ## 🛠 Configuration
@@ -17,9 +17,9 @@ Add to your Stylelint config:
 
 ```js
 module.exports = {
-  plugins: ['stylelint-no-top-level-selector'],
+  plugins: ['stylelint-disable-top-level-selector'],
   rules: {
-    'plugin/no-top-level-selector': [true, {
+    'plugin/disable-top-level-selector': [true, {
       restrictedSelectors: ['body', 'html', /^[a-z]+$/],
       ignoreSelectors: [':root', /^--/],
       customMessage: selector => `"${selector}" should be nested`
